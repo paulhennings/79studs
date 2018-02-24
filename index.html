@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
   <body>
-    <!-- LightWidget WIDGET -->
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGhlbm4iLCJhIjoiY2l1aHF3bTNuMDAwaDJvcWRyNWtsdmRzdiJ9.KNHeH6N7Mt29rey2JEhRvw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/paulhenn/cje0s566281eb2rpfs1zive0i'
+      });
+    </script>
+<!-- LightWidget WIDGET -->
     <script src="//lightwidget.com/widgets/lightwidget.js"></script>
     <iframe src="//lightwidget.com/widgets/221b01a265eb59e8b441cf4c3d40bcd8.html"
       scrolling="no"
